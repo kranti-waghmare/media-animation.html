@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main{
+        height: 100px;
+        width: 100px;
+        background-color: bisque;
+        margin: 3px;
+        box-shadow: 15px 15px 15px grey;
+        animation: anim1 5s;
+        transition-duration: infinite;
+        
+    }
+
+    .main:hover{
+        background-color: darkgreen;
+    }
+
+
+
+@keyframes anim1 {
+   from{
+    margin-top: 0rem;
+    margin-left: 0rem;
+   }
+
+   to{
+    margin-top: 0rem;
+    margin-left: 25rem;
+    background-color: blue;
+   }
+
+    0%{
+        margin-top: 0rem;
+        margin-left: 0rem;
+        background-color: crimson;
+    
+    }
+
+    25%{
+        margin-top: 0rem;
+        margin-left: 25rem;
+        background-color: cadetblue;
+        
+    }
+
+    50%{
+        margin-top: 25rem;
+        margin-left: 25rem;    
+        background-color: coral;
+
+    }
+
+
+    75%{
+        margin-top: 25rem;
+    
+        margin-left: 0rem;
+        background-color: brown;
+    }
+    100%{
+        margin-top: 0rem;
+        margin-left: 0rem;
+
+    }
+}
+
+</style>
+
+</head>
+<body>
+    <div class="main"></div>
+    
+</body>
+</html>
